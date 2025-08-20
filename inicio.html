@@ -1,0 +1,558 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Era Uma Vez | Salão de Festas</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/inicio.css">
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+   
+
+
+</head>
+<body>
+
+
+  
+
+  <!-- Navbar Transparente Moderna -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px);">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="#">
+      <i class="bi bi-stars me-2" href="#home"></i> Era Uma Vez
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Seção Hero com Foto Visível em Mobile -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-content text-white pe-lg-5">
+          <h1 class="hero-title fw-bold mb-4 animate__animated animate__fadeInDown" style="font-size: 3.2rem;">
+            Festas <span class="text-color">Mágicas</span> Infantis
+          </h1>
+          <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+            Criamos experiências encantadas que ficarão para sempre na memória do seu filho!
+          </p>
+          <div class="d-flex flex-wrap gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="#valores" class="btn btn-modern btn-primary-modern">
+              Nossos Pacotes <i class="bi bi-gift ms-2"></i>
+            </a>
+            <a href="#contato" class="btn btn-modern btn-outline-light">
+              <i class="bi bi-calendar-check me-2"></i>Agendar
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-image-container animate__animated animate__fadeIn">
+          <img src="./img/salao1.jpg" alt="Festas infantis mágicas no salão Era Uma Vez com decoração temática e crianças felizes" class="hero-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria Otimizada -->
+<section id="gallery" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary mb-3 py-2 px-3">
+        <i class="bi bi-images me-2"></i>NOSSO ESPAÇO
+      </span>
+      <h2 class="fw-bold mb-3">Galeria Encantada</h2>
+      <p class="text-muted">Ambientes temáticos que transportam para um mundo de fantasias</p>
+    </div>
+    
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="./img/salao1.jpg" alt="Salão principal decorado para festa de aniversário infantil" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="./img/salao2.jpg" alt="Mesas decoradas para festa infantil perfeita para aniversários" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="./img/salao3.jpg" alt="Espaço kids com brinquedos e diversão para todas as idades" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="./img/salao4.jpg" alt="Cantinho da foto infantil com cenários divertidos" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="./img/salao5.jpg" alt="Buffet completo disponível para sua festa infantil" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="./img/salao6.jpg" alt="Decorações personalizadas para todos os temas de festa" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Botão "Ver Todas as Fotos" como no código anterior -->
+    <div class="text-center mt-4">
+      <button class="btn btn-modern btn-primary-modern" data-bs-toggle="modal" data-bs-target="#galleryModal">
+        Ver Todas as Fotos <i class="bi bi-images ms-2"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal da Galeria -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <d  iv class="modal-body">
+        <div id="modalCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/salao1.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/salao2.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/salao3.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/salao4.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div> 
+            <div class="carousel-item ">
+              <img src="./img/salao5.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+              <div class="carousel-item ">
+              <img src="./img/salao6.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/salao7.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+         
+            <div class="carousel-item ">
+              <img src="./img/salao8.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+            <!-- Adicione mais itens do carrossel conforme necessário -->
+            <div class="carousel-item ">
+              <img src="./img/salao9.jpg" class="d-block w-100" alt="Segunda foto do salão">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/salao10.jpg" class="d-block w-100" alt="Terceira foto do salão">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/salao11.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+           
+            <div class="carousel-item ">
+              <img src="./img/salao12.jpg" class="d-block w-100" alt="Foto ampliada do salão">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+    <!-- VALORES / PREÇOS -->
+
+    <section id="valores" class="container py-5">
+      <div class="text-center mb-4">
+        <span class="pill"><i class="bi bi-currency-exchange"></i> Valores</span>
+        <h2 class="mt-2 section-title">Planos e pacotes</h2>
+        <p class="text-muted">Valores de referência — personalizamos conforme a necessidade do seu evento.</p>
+      </div>
+
+
+
+       
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="price-card p-4 h-100 border-2 position-relative">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-warning">
+              Mais pedido
+            </span>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="mb-0">Sextas a Domingos e Feriados + Decoração + Buffet</h5>
+              <span class="badge text-bg-light"><i class="bi bi-clock"></i> 6h</span>
+            </div>
+            <h3 class="fw-bold">R$ 2.699,00</h3>
+            <ul class="list-unstyled small mt-3">
+              <li><i class="bi bi-check-circle me-1"></i> decoração</li>
+              <li><i class="bi bi-check-circle me-1"></i> brinquedos infantis</li>
+              <li><i class="bi bi-check-circle me-1"></i> Sala do silencio</li>
+            </ul>
+            <button class="btn btn-primary w-100" data-plan="Encantado"><i class="bi bi-stars me-1"></i> Reservar agora</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="price-card p-4 h-100 border-2 position-relative">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-warning">
+              Mais pedido
+            </span>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="mb-0">Segunda a Quinta + Decoração + Buffet</h5>
+              <span class="badge text-bg-light"><i class="bi bi-clock"></i> 6h</span>
+            </div>
+            <h3 class="fw-bold">R$ 2.499,00</h3>
+            <ul class="list-unstyled small mt-3">
+              <li><i class="bi bi-check-circle me-1"></i> decoração</li>
+              <li><i class="bi bi-check-circle me-1"></i> brinquedos infantis</li>
+              <li><i class="bi bi-check-circle me-1"></i> Sala do silencio</li>
+            </ul>
+            <button class="btn btn-primary w-100"  data-plan="Encantado"><i class="bi bi-stars me-1"></i> Reservar agora</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="price-card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="mb-0">Segunda, Terça, Quarta, Quinta + Decoração</h5>
+              <span class="badge text-bg-light"><i class="bi bi-clock"></i> 6h</span>
+            </div>
+            <h3 class="fw-bold">R$ 750,00</h3>
+            <ul class="list-unstyled small mt-3">
+              <li><i class="bi bi-check-circle me-1"></i> decoração</li>
+              <li><i class="bi bi-check-circle me-1"></i> Mesas e cadeiras</li>
+              <li><i class="bi bi-check-circle me-1"></i> brinquedos infantis</li>
+            </ul>
+            <button class="btn btn-outline-primary w-100" data-plan="Essencial"><i class="bi bi-chat-left-text me-1"></i> Solicitar orçamento</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="price-card p-4 h-100 border-2 position-relative">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-warning">
+              Mais pedido
+            </span>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="mb-0">Sextas, Sabados, Domingos e Feriados + Decoração</h5>
+              <span class="badge text-bg-light"><i class="bi bi-clock"></i> 6h</span>
+            </div>
+            <h3 class="fw-bold">R$ 950,00</h3>
+            <ul class="list-unstyled small mt-3">
+              <li><i class="bi bi-check-circle me-1"></i> decoração</li>
+              <li><i class="bi bi-check-circle me-1"></i> brinquedos infantis</li>
+              <li><i class="bi bi-check-circle me-1"></i> Sala do silencio</li>
+            </ul>
+            <button class="btn btn-primary w-100"  data-plan="Encantado"><i class="bi bi-stars me-1"></i> Reservar agora</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="price-card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="mb-0">Segunda, Terça, Quarta, Quinta </h5>
+              <span class="badge text-bg-light"><i class="bi bi-clock"></i> 6h</span>
+            </div>
+            <h3 class="fw-bold">R$ 600,00</h3>
+            <ul class="list-unstyled small mt-3">
+              <li><i class="bi bi-check-circle me-1"></i> mesas e cadeiras</li>
+              <li><i class="bi bi-check-circle me-1"></i> sala do silencio</li>
+              <li><i class="bi bi-check-circle me-1"></i> briquedos infantis</li>
+            </ul>
+            <button class="btn btn-outline-primary w-100" data-plan="Real"><i class="bi bi-gem me-1"></i> Falar com consultor</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="price-card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="mb-0">Sextas, Sabados, Domingos e Feriados</h5>
+              <span class="badge text-bg-light"><i class="bi bi-clock"></i> 6h</span>
+            </div>
+            <h3 class="fw-bold">R$ 850,00</h3>
+            <ul class="list-unstyled small mt-3">
+              <li><i class="bi bi-check-circle me-1"></i> sala do silencio</li>
+              <li><i class="bi bi-check-circle me-1"></i> mesas e cadeiras</li>
+              <li><i class="bi bi-check-circle me-1"></i> brinquedos infantis</li>
+            </ul>
+            <button class="btn btn-outline-primary w-100" data-plan="Real"><i class="bi bi-gem me-1"></i> Falar com consultor</button>
+          </div>
+        </div>
+      </div>
+       
+      </div>
+      
+
+      <p class="small text-muted mt-3"><i class="bi bi-info-circle"></i> *Os preços são estimativas e podem variar por data, número de convidados e serviços adicionais.</p>
+    </section>
+
+   
+
+    <!-- MODAL DE IMAGEM -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img id="modalImg" src="" alt="Imagem ampliada" class="w-100" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENDEREÇO -->
+    <section id="endereco" class="container py-5">
+      <div class="text-center mb-4">
+        <span class="pill"><i class="bi bi-geo-alt"></i> Endereço</span>
+        <h2 class="mt-2 section-title">Como chegar</h2>
+        <p class="text-muted">Av. Dr. Hermínio Ometto, 477 — Bairro Alto Santa Rita — Leme/SP</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
+            <!-- Substitua o src do mapa pela sua localização (Google Maps Embed) -->
+            <iframe src="https://www.google.com/maps?q=Av.+Dr.+Hermínio+Ometto,+477&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- Cardápio -->
+<section id="cardapio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5" style="font-family: 'Comic Sans MS', cursive; color: #ff5e99;">Cardápio do Buffet</h2>
+    <div class="row text-center">
+      
+       <!-- Entrada -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-buffet-clipart-cartoon-cartoon-food-buffet-table-on-white-vector-png-image_6798437.png" 
+             width="60" height="60" class="mb-3 rounded-circle" alt="Entrada">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Entrada</h4>
+        <p class="text-secondary fw-bold">Escolher 3 opções</p>
+        <ul class="list-unstyled">
+          <li>Barquinha de maionese</li>
+          <li>Batata frita</li>
+          <li>Mini hambúrguer</li>
+          <li>Mini cachorro quente</li>
+          <li>Mini pizza</li>
+          <li>Mini lanche de pernil</li>
+          <li>Mini pão sírio (patê de frango)</li>
+        </ul>
+      </div>
+
+      <!-- Salgados Fritos -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://augustaalimentos.com.br/wp-content/uploads/2019/04/prato-salgados.png" 
+             width="60" height="60" class="mb-3 rounded-circle" alt="Salgados fritos">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Salgados Fritos</h4>
+        <p class="text-secondary fw-bold">Escolher 4 opções</p>
+        <ul class="list-unstyled">
+          <li>Coxinha</li>
+          <li>Kibe</li>
+          <li>Bolinha de queijo</li>
+          <li>Enroladinho de salsicha</li>
+          <li>Enroladinho de presunto e queijo</li>
+          <li>Risolis de milho com catupiry</li>
+        </ul>
+      </div>
+
+      <!-- Salgados Assados -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://png.pngtree.com/png-vector/20230307/ourmid/pngtree-three-delicious-nastar-cheese-cookies-vector-illustration-png-image_6636194.png" 
+             width="60" height="60" class="mb-3 rounded-circle" alt="Salgados assados">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Salgados Assados</h4>
+        <p class="text-secondary fw-bold">Escolher 2 opções</p>
+        <ul class="list-unstyled">
+          <li>Esfirra de carne</li>
+          <li>Esfirra de frango</li>
+          <li>Esfirra de calabresa com catupiry</li>
+          <li>Empada de frango</li>
+          <li>Tortinha de tempero</li>
+        </ul>
+      </div>
+      <!-- Massas -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://images.vexels.com/media/users/3/264613/isolated/preview/08bcb373a3ed126ce0c739286f26c883-comida-de-ilustracao-de-massas.png" width="60" class="mb-3">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Massas</h4>
+        <p class="text-secondary fw-bold">Escolher 1 opção</p>
+        <ul class="list-unstyled">
+          <li>Macarrão parafuso com molho bolonhesa</li>
+          <li>Polenta com carne moída</li>
+        </ul>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://media.istockphoto.com/id/1511319542/pt/vetorial/cola-soda-drink-picture-sticker-vector-drawing-of-a-soda-cup-and-bottle-in-flat-cartoon.jpg?s=612x612&w=0&k=20&c=6PmMFdhzf6quPLG7e0LfNXtaxxKDv_EHQI3rEnX-Zvk=" 
+             width="60" height="60" class="mb-3 rounded-circle" alt="Bebida">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Bebidas</h4>
+        <ul class="list-unstyled">
+          <li>Coca-Cola</li>
+          <li>Guaraná Cruzeiro</li>
+          <li>Suco de laranja</li>
+          <li>Água</li>
+        </ul>
+      </div>
+
+      <!-- Doces -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://images.vexels.com/media/users/3/134503/isolated/preview/830fdc409b6a46e1685e18a1b2eae1e2-comida-doce-de-cupcake-de-sobremesa.png" width="60" class="mb-3">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Doces</h4>
+        <p class="text-secondary fw-bold">Escolher 2 opções</p>
+        <ul class="list-unstyled">
+          <li>Brigadeiro</li>
+          <li>Beijinho</li>
+          <li>Moranguinho</li>
+        </ul>
+      </div>
+
+      <!-- Bolo -->
+      <div class="col-md-3 col-12 mb-4 border-start border-dark">
+        <img src="https://images.vexels.com/media/users/3/322603/isolated/preview/4fc53faf65190cc0a2c265bff8c07c16-bolo-plano-de-cereja.png" width="60" class="mb-3">
+        <h4 class="fw-bold" style="font-family: 'Comic Sans MS', cursive;">Bolo</h4>
+        <p class="text-secondary fw-bold">Escolher 2 recheios</p>
+        <ul class="list-unstyled">
+          <li>Doce de leite</li>
+          <li>Creme belga</li>
+          <li>4 leites</li>
+          <li>Brigadeiro tradicional</li>
+          <li>Ninho</li>
+          <li>Paçoquinha</li>
+          <li>Mousse de morango/maracujá</li>
+          <li>Charge</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="container py-5">
+      <div class="text-center mb-4">
+        <span class="pill"><i class="bi bi-envelope"></i> Contato</span>
+        <h2 class="mt-2 section-title">Peça um orçamento</h2>
+        <p class="text-muted">Conte pra gente a data, o tipo de evento e o número de convidados.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <form id="formContato" class="bg-white p-4 rounded-4 shadow-sm border">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" name="nome" required />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Telefone/WhatsApp</label>
+                <input type="tel" class="form-control" name="telefone" required />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" required />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Data do Evento</label>
+                <input type="date" class="form-control" name="data" required />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Nº de Convidados</label>
+                <input type="number" class="form-control" name="convidados" min="10" max="500" />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Pacote</label>
+                <select class="form-select" name="pacote">
+                  <option>Segunda, Terça, Quarta, Quinta</option>
+                  <option>Segunda, Terça, Quarta, Quinta + Decoração</option>
+                  <option>Sextas, Sabados, Domingos e Feriados </option>
+                  <option>Sextas, Sabados, Domingos e Feriados + Decoração</option>
+                  <option>Sextas a Domingos e Feriados + Decoração + Buffet</option>
+                  <option>Segunda a Sexta + Decoração + Buffet</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Mensagem</label>
+                <textarea class="form-control" rows="4" name="mensagem" placeholder="Conte-nos detalhes do seu evento..."></textarea>
+              </div>
+              <div class="col-12 d-grid d-md-flex gap-2">
+                <button class="btn btn-primary" style="background-color: var(--prim); border-color: var(--prim-dark);" type="submit">
+                  <i class="bi bi-send me-1"></i> Enviar
+                </button>
+                <a id="btnWhats" target="_blank" class="btn btn-success"><i class="bi bi-whatsapp me-1"></i> WhatsApp</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="bg-white p-4 rounded-4 shadow-sm border h-100">
+            <h5 class="fw-bold mb-3"><i class="bi bi-clock-history"></i> Horários de funcionamento</h5>
+            <ul class="list-unstyled small">
+              <li>Seg a Sex: 09:00 – 18:00</li>
+              <li>Sábado: 09:00 – 14:00</li>
+              <li>Eventos: conforme agendamento</li>
+            </ul>
+            <hr>
+            <h5 class="fw-bold mb-3"><i class="bi bi-share"></i> Redes sociais</h5>
+            <div class="d-flex gap-2">
+              <a class="btn btn-outline-dark btn-sm" href="https://www.instagram.com/era_uma_vezeventos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+              <a class="btn btn-outline-dark btn-sm" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="btn btn-outline-dark btn-sm" href="#"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="pt-5 pb-4 mt-3">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-stars text-color"></i>
+              <strong>Era Uma Vez</strong>
+            </div>
+            <small class="text-muted">CNPJ 43.718.221/0001-02</small>
+          </div>
+          <div class="col-12 col-md-auto">
+            <small class="text-muted">© <span id="ano"></span> Era Uma Vez — Todos os direitos reservados.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+     
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/inicio.js"></script>
+     <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
